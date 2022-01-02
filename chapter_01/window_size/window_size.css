@@ -1,0 +1,7 @@
+.tag {
+  display: inline-block;
+  background-color: thistle;
+  padding: 16px;
+  margin-top: 16px;
+  font-size: 48px;
+}

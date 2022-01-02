@@ -1,0 +1,23 @@
+body {
+  background-color: grey;
+  /* scroll */
+  /* overfolow: hidden  */
+}
+
+div {
+  width: 250px;
+  height: 250px;
+  background-color: aliceblue;
+  margin-bottom: 4px;
+  border-radius: 5%;
+}
+
+.special {
+  background-color: lightpink;
+}
+
+aside {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
