@@ -1,3 +1,4 @@
+'use strict'
 //Objects
 //one of the JavaScript's data types.
 //a collection of related datat and/or functionality.

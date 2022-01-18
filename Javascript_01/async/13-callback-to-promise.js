@@ -1,3 +1,4 @@
+'use strict'
 //Callback Hell example 💩
 //user의 data를 backend server에서 받아오는 class가 있다고 가정해보자.
 class UserStorage {

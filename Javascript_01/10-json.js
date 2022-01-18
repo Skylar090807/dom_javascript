@@ -1,3 +1,4 @@
+'use strict'
 // JSON(JavaScript Object Notation)
 // parse, stringfy Overloading
 
