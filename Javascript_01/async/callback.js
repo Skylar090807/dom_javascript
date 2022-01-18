@@ -88,7 +88,7 @@ class UserStorage {
 // 3️⃣ login 성공한 id를 요청해서 role을 받아온다.
 // 4️⃣ role에 요청해 사용자의 id와 role을 출력한다.
 
-//callback hell version
+//callback hell version 💩
 //아래와 같이 callback에 callback을 거듭하면 가독성도 떨어지고 디버깅도 어렵다.
 const userLogin = new UserStorage()
 const id = prompt('enter your 🆔')
