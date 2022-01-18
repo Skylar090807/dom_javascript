@@ -99,3 +99,4 @@ getHen()
   //출력 결과: 🐓 => 🥚 => 🍳
   //Error Handling 하지 않았을 때 reject 출력 결과: Uncaught(in promise) Error: error! 🐓 => 🥚
   .catch(console.log) //출력 결과: Error: error! 🐓 => 🥚
+//23:25
