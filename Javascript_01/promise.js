@@ -76,7 +76,7 @@ const getHen = () =>
   })
 const getEgg = (hen) =>
   new Promise((resolve, reject) => {
-    setTimeout(() => resolve(`${hen} => 🥚`), 1000)
+    setTimeout(() => reject(new Error(`error! ${hen} => 🥚`)), 1000)
   })
 const cook = (egg) =>
   new Promise((resolve, reject) => {
@@ -86,10 +86,16 @@ const cook = (egg) =>
 getHen()
   // .then((hen) => getEgg(hen))
   //한 가지만 받아서 그대로 전달하는 경우에는 아래와 같이 생략해 작성이 가능하다.
-  .then(getEgg)
-  // .then((egg) => cook(egg))
+  // .then(getEgg)
+  // .then((egg) => cook(egg)) //reject 된 getEgg 처리 👇🏻
+  .catch((error) => {
+    return '🍦' //error가 난 부분에 .catch를 작성해 바로 에러를 해결할 수 있다.
+    // 에러 처리 출력결과: 🍦 => 🍳
+  })
   .then(cook)
   // .then((meal) => console.log(meal))
   .then(console.log)
-//출력 소요시간은 3초
-//출력 결과: 🐓 => 🥚 => 🍳
+  //출력 소요시간은 3초
+  //출력 결과: 🐓 => 🥚 => 🍳
+  //Error Handling 하지 않았을 때 reject 출력 결과: Uncaught(in promise) Error: error! 🐓 => 🥚
+  .catch(console.log) //출력 결과: Error: error! 🐓 => 🥚
